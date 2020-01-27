@@ -1,3 +1,4 @@
 .stack-work/
 AOC.cabal
+dist-newstyle
 *~

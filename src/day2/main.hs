@@ -51,8 +51,8 @@ getArg = getIndex =<< item
 
 item :: MonadState ProgramState m => m (Int)
 item = do
-  index <- use offSet
-  num <- fmap fromJust . preuse $ (codes . ix index)
+  codeIndex <- use offSet
+  num <- fmap fromJust . preuse $ (codes . ix codeIndex)
   advance
   return num
 
